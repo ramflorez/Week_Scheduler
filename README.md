@@ -5,3 +5,6 @@ By using momentjs, I created the current day to display upon loading the page.
 In the same way, I created the times in the timeblocks.
 I used the classes "past", "present" and "future" to make the events color coded.
 Finally, I used local store to save the events in the browser.
+Here is alink to screenshots of the deployed page.
+https://github.com/ramflorez/Week_Scheduler/issues/1#issue-849802009
+And here is the link to the github pages.
