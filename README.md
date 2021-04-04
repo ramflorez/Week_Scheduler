@@ -8,3 +8,4 @@ Finally, I used local store to save the events in the browser.
 Here is alink to screenshots of the deployed page.
 https://github.com/ramflorez/Week_Scheduler/issues/1#issue-849802009
 And here is the link to the github pages.
+https://ramflorez.github.io/Week_Scheduler/
