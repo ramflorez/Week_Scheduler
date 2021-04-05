@@ -26,18 +26,27 @@ var TimeblockHour = timeblock[i].id
 
 const saveBtn = document.querySelectorAll(".saveBtn"); 
 for (var i=0; i<saveBtn.length; i++){
-      
-const textarea = document.querySelectorAll(".texarea")
-for (var i=0; i<textarea.length; i++){
-}
+    saveBtn[i].addEventListener('click', setLocalStorage);           
+}   
 
 function setLocalStorage(event){
-    var textarea = (".textarea")
-    var saveBtn = (".saveBtn")
-    saveBtn.addEventListener('click', setLocalStorage); 
-
-
+    console.log(event.target);
+    console.log(event.target.parentElement.children[1].value.trim());
+    var eventName = event.target.parentElement.children[1].value.trim();
+    
+var timeDay = event.target.parentElement.id
+localStorage.setItem(timeDay, eventName)
 }
-setLocalStorage.getElementById(saveBtn, textarea)
+
+function getStorage(){
+    var keys = Object.keys(localStorage)
+    keys.forEach(function(key){
+        console.log(key)
+        var eventName = localStorage.getItem(key)
+        document.getElementById(key).children[1].value = eventName
+        console.log(localStorage.getItem(key))
+    })
     
 }
+getStorage()
+
