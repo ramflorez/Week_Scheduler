@@ -30,11 +30,11 @@ for (var i=0; i<saveBtn.length; i++){
 }   
 
 function setLocalStorage(event){
-    console.log(event.target);
-    console.log(event.target.parentElement.children[1].value.trim());
-    var eventName = event.target.parentElement.children[1].value.trim();
+    console.log(event.currentTarget);
+    console.log(event.currentTarget.parentElement.children[1].value.trim());
+    var eventName = event.currentTarget.parentElement.children[1].value.trim();
     
-var timeDay = event.target.parentElement.id
+var timeDay = event.currentTarget.parentElement.id
 localStorage.setItem(timeDay, eventName)
 }
 
