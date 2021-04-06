@@ -4,7 +4,7 @@ CurrentDay.textContent = todays_date
 
     
 const timeblock = document.querySelectorAll(".time-block");
-let currentHour = parseInt(moment().format('hh'));
+let currentHour = parseInt(moment().format('H HH'));
 
 for (i=0; i<timeblock.length; i++){
     console.log(timeblock[i])
@@ -18,7 +18,7 @@ var TimeblockHour = timeblock[i].id
     else if (currentHour < TimeblockHour){
         timeblock[i].children[1].classList.add("past")
     }
-    else {
+    else if (currentHour > TimeblockHour){
         timeblock[i].children[1].classList.add("future")
     }
 
