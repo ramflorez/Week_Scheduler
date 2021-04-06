@@ -12,13 +12,13 @@ for (i=0; i<timeblock.length; i++){
   timeblock[i].children[1].setAttribute("id",i);
 var TimeblockHour = timeblock[i].id
     // Compares Timeblock id to current hour and sets color accordingly
-    if (currentHour === TimeblockHour) {
+    if (currentHour == TimeblockHour) {
       timeblock[i].children[1].classList.add("present")
     } 
-    else if (currentHour < TimeblockHour){
+    else if (currentHour > TimeblockHour){
         timeblock[i].children[1].classList.add("past")
     }
-    else if (currentHour > TimeblockHour){
+    else if (currentHour < TimeblockHour){
         timeblock[i].children[1].classList.add("future")
     }
 
